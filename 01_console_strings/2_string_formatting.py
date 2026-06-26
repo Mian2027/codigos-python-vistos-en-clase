@@ -2,7 +2,7 @@
 # Contexto historico (historical context):
 # - El formato antiguo (old-style formatting) con '%' existe desde Python 1.x.
 # - El metodo str.format() fue introducido en Python 2.7 (July 2010) y Python 3.0 (December 2008).
-# - Las f-strings fueron introducidas en Python 3.6 (December 2016).
+# - Las cadenas con formato nombrado se pueden construir con str.format().
 # Explicación: formatear es aplicar una funcion F(plantilla, valores) -> cadena final.
 
 
@@ -24,13 +24,12 @@ print("Hola, %s. Tienes %d años." % (name, age))
 print("Hola, {}. Tienes {} años.".format(name, age))
 # Salida: Hola, Marco. Tienes 30 años.
 
-# 3. F-string
+# 3. format() con argumentos nombrados
 
-# Las f-strings permiten insertar expresiones dentro de cadenas de forma concisa y legible.
-# Se antepone una 'f' a la cadena y se colocan expresiones entre llaves {}.
-# Las f-strings se evaluan en tiempo de ejecucion (runtime).
-# Explicación: una f-string evalua expresiones y construye F(name, age) = texto.
-print(f"Hola, {name}. Tienes {age} años.")
+# str.format() tambien permite usar nombres dentro de la plantilla.
+# Esto ayuda a que la cadena sea clara cuando hay varios valores.
+# Explicación: format(name=name, age=age) sustituye {name} y {age}.
+print("Hola, {name}. Tienes {age} años.".format(name=name, age=age))
 # Salida: Hola, Marco. Tienes 30 años.
 
 # 4. print() con multiples objetos
@@ -43,4 +42,4 @@ print(f"Hola, {name}. Tienes {age} años.")
 print("Hola,", name + ".", "Tienes", age, "años.")
 # Salida: Hola, Marco. Tienes 30 años.
 
-# Nota: las f-strings suelen preferirse en Python moderno por legibilidad y eficiencia.
+# Nota: str.format() es util cuando quieres construir una cadena usando una plantilla.

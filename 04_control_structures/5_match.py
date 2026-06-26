@@ -26,9 +26,9 @@ def describe_point(point):
         case (0, 0):
             return "Origen"
         case (x, 0):
-            return f"En el eje X en {x}"
+            return "En el eje X en {}".format(x)
         case (0, y):
-            return f"En el eje Y en {y}"
+            return "En el eje Y en {}".format(y)
         case (x, y) if x == y:
             return "En la linea y = x"
         case _:

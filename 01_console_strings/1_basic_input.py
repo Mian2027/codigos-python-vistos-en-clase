@@ -10,9 +10,8 @@ name = input(
     "Ingresa tu nombre: "
 )  # La entrada se guarda en la variable (variable) 'name'.
 
-# Una f-string (formatted string literal) es una forma moderna de dar formato a cadenas.
-# Permite insertar expresiones dentro de una cadena (string) usando llaves {}.
-# Explicación: el formato aplica una funcion g(name) = "Hola, " + name
+# print() puede recibir varios argumentos separados por comas.
+# Explicación: print aplica una funcion g(name) = "Hola, " + name
 print('Hola,', name)  # Salida (output): Hola, <name>
 
 # Capturamos otra entrada del usuario.
@@ -21,6 +20,6 @@ print('Hola,', name)  # Salida (output): Hola, <name>
 # Explicación: age primero es texto; si se convierte, podria representar un numero natural n >= 0.
 age = input("Ingresa tu edad: ")
 
-# La f-string se usa otra vez para incluir el valor de 'age' en la salida.
+# print() se usa otra vez para incluir el valor de 'age' en la salida.
 # Explicación: h(age) = "Tienes " + age + " años.".
 print('Tienes', age, 'años.')  # Salida: Tienes <age> años.

@@ -182,11 +182,11 @@ solution.py
 .DS_Store
 
 # Unidades desde 06_arrays en adelante
-/06_arrays/
-/07_more_control_structures/
-/08_range_and_list_comprehension/
-/09_tuples_set_dictionaries/
-/10_lambda_functions/
+# /06_arrays/
+# /07_more_control_structures/
+# /08_range_and_list_comprehension/
+# /09_tuples_set_dictionaries/
+# /10_lambda_functions/
 /11_map_filter_reduce/
 /12_scope/
 /13_namespace/

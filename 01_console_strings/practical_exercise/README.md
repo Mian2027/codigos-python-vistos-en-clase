@@ -11,14 +11,13 @@ El programa debe:
 3. pedir la ciudad;
 4. mostrar una línea de separación;
 5. mostrar el nombre y la edad usando argumentos separados por comas;
-6. mostrar la ciudad usando una f-string;
+6. mostrar la ciudad usando argumentos separados por comas;
 7. mostrar los tres datos separados por ` | `.
 
 Debes utilizar:
 
 - `input()`;
 - `print()`;
-- una f-string;
 - el argumento `sep`.
 
 ## Ejemplo

@@ -1,6 +1,6 @@
 # 1. Las funciones (functions) en Python pueden ser tratadas como valores y asignadas a variables.
 def greet(name):
-    return f"Hola, {name}!"
+    return "Hola, {}!".format(name)
 
 
 # Asignando la funcion greet a la variable say_hello
